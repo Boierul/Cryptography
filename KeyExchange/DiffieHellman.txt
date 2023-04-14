@@ -1,0 +1,15 @@
+Diffie-Hellman is a key exchange algorithm used in cryptography to securely exchange cryptographic keys over a
+public communication channel.
+
+The basic idea behind the Diffie-Hellman key exchange is that two parties, let's call them Alice and Bob,
+can agree on a shared secret key over an insecure communication channel without actually exchanging
+the key itself. Instead, they each choose a secret number and use a mathematical formula to generate a
+public key based on their secret number. They then exchange these public keys, and use another mathematical
+formula to derive the shared secret key from the other party's public key and their own secret key.
+
+The security of the Diffie-Hellman key exchange is based on the difficulty of computing discrete logarithms
+in a finite field. Essentially, an attacker who intercepts the public keys exchanged by Alice and Bob
+would need to solve a hard mathematical problem in order to calculate the shared secret key.
+
+The Diffie-Hellman key exchange is used in many cryptographic protocols, including SSL/TLS for secure web communication,
+and in the creation of VPN tunnels for secure remote access.

@@ -1,0 +1,18 @@
+RSA (Rivest–Shamir–Adleman) is a public-key (asymmetric) cryptographic algorithm used for encryption and digital signatures.
+
+The RSA algorithm is based on the mathematical properties of large prime numbers. It involves the generation of a public
+and private key pair. The public key can be freely distributed to anyone, while the private key must be kept secret.
+
+The encryption process using RSA involves converting the message into a numerical value, and then encrypting it using
+the recipient's public key. The recipient can then use their private key to decrypt the message and recover the original plaintext.
+
+The digital signature process using RSA involves applying a mathematical function to the message using the sender's
+private key, which generates a digital signature. The recipient can then verify the signature using the sender's
+public key, ensuring that the message was indeed sent by the claimed sender and has not been tampered with.
+
+The security of RSA is based on the difficulty of factoring large numbers into their prime factors. This means
+that breaking RSA encryption or forging RSA digital signatures requires the ability to factor very large numbers,
+which is currently believed to be infeasible for sufficiently large keys.
+
+RSA is widely used in many applications, including secure email communication, SSL/TLS for secure web communication,
+and digital signatures for electronic transactions.
