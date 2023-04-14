@@ -1,0 +1,21 @@
+Block ciphers are a type of symmetric-key encryption algorithm that operate on fixed-size blocks of data,
+typically 64 or 128 bits. The input block is encrypted or decrypted using a fixed-length key, resulting in an output block of the same size.
+
+Block ciphers can be classified into two categories: Feistel ciphers and substitution-permutation ciphers.
+
+Feistel ciphers use a combination of substitution and permutation operations on each block of plaintext
+to produce ciphertext.
+ - DES (Data Encryption Standard)
+ - 2DES (Double DES)
+ - 3DES (Triple DES)
+
+Substitution-permutation ciphers use a combination of substitution and permutation operations on each block
+of plaintext to produce ciphertext.
+ - AES (Advanced Encryption Standard)
+
+Other notorious block ciphers:
+    - IDEA (International Data Encryption Algorithm)
+    - TwoFish (Twofish is a symmetric-key block cipher)
+    - Blowfish (Blowfish is a symmetric-key block cipher)
+    - Serpent (Serpent is a symmetric-key block cipher)
+    - GOST (GOST/Magma is a russian symmetric-key block cipher)
