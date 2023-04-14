@@ -1,0 +1,22 @@
+Stream ciphers are a type of encryption algorithm that operates on a continuous stream of data,
+encrypting or decrypting it bit by bit. This is in contrast to block ciphers, which operate on fixed-size blocks of data.
+
+A stream cipher is the real-life implementation of a one-time pad.
+    - No requirement on key stream
+    - No requirement on key length
+    - Not true random
+    - Can reuse key stream
+
+Stream ciphers work by generating a pseudorandom stream of bits, which is combined with the plaintext using the XOR
+operation to produce the ciphertext. The same process is used for decryption, where the pseudorandom stream is
+generated again and combined with the ciphertext to produce the original plaintext.
+
+One advantage of stream ciphers is that they are typically faster and require less memory than block ciphers, as they do
+not need to process data in fixed-size blocks. However, they may be more vulnerable to certain types of attacks,
+such as known-plaintext attacks, where an attacker has access to both the plaintext and corresponding ciphertext.
+Therefore, it is important to choose an appropriate cipher based on the specific use case and security requirements.
+
+Stream ciphers example algorithms:
+    - RC4
+    - Salsa20
+    - ChaCha20
