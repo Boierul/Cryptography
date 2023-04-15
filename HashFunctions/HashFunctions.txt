@@ -1,0 +1,28 @@
+A hash function is a mathematical function that takes in an input (such as a string or file) and outputs a
+fixed-size string of characters, which is usually a sequence of letters and numbers.
+The output string is often referred to as a hash value or hash code.
+
+Hash functions are used in cryptography to verify the integrity of data. Other use cases:
+    - Digital signatures (e.g. RSA)
+    - Password storage (e.g. bcrypt)
+    - Hash tables (e.g. hash maps)
+    - Hash trees (e.g. Merkle trees)
+    - Hash-based message authentication codes (e.g. HMAC)
+    - Hash-based signatures (e.g. Schnorr signatures)
+    - Hash-based pseudorandom functions (e.g. HKDF)
+    - Hash-based pseudorandom number generators (e.g. Hash_DRBG)
+    - Hash-based one-way functions (e.g. PBKDF2)
+    - Hash-based key derivation functions (e.g. scrypt)
+    - Hash-based password authentication (e.g. Argon2)
+    - SHA-3 (e.g. Keccak)
+    - SHA-256 (e.g. Bitcoin - using elliptic curve cryptography which is a form of public key cryptography and an
+    extension of the Diffie–Hellman key exchange)
+
+Proprieties of hash functions:
+    - Hash functions are not reversible. This means that it is impossible to recover the original input from the hash
+    value.
+    - Hash functions are deterministic. This means that the same input will always produce the same hash value.
+    - Hash functions are collision resistant. This means that it is very difficult to find two different inputs
+    that will produce the same hash value.
+
+! For additional security the hash function is combined with a salt (random data) to prevent rainbow table attacks.

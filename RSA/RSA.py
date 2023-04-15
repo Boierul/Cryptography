@@ -35,6 +35,13 @@ def get_d(e, phi):
             return d
     return False
 
+# Function that factors a number n
+def factor(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return i, n // i
+    return False
+
 # Key generation (done by Alice - in private)
 #   Step 1: Generate two distinct primes
 size = 300
@@ -73,3 +80,33 @@ print("Bob sends:", c)
 # Alice decrypts the cipher
 m = (c ** d) % n
 print("Alice decrypts:", m)
+
+# This is Eve trying to decrypt the message
+print("\n")
+print("Eve sees the following:")
+print("Public key: (", e, ",", n, ")")
+print("Encrypted cipher: ", c)
+p, q = factor(n)
+print("Factors of n:", p, q)
+
+lambda_n = lcm(p-1, q-1)
+print("Eve: Lambda n (phi):", lambda_n)
+d = get_d(e, lambda_n)
+print("Eve: Private key d:", d)
+
+m = (c ** d) % n
+print("Eve decrypts:", m)
+
+# This is Bob not being careful
+print("\n")
+print("This is Bob not being careful")
+message = "Alice is the best"
+for m_c in message:
+    m = ord(m_c)
+    c = (m ** e) % n
+    print("Bob sends:", c)
+
+    m = (c ** d) % n
+    print("Alice decrypts:", chr(m))
+
+# Results in frequency analysis attack possibility

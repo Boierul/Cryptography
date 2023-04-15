@@ -1,0 +1,21 @@
+HMAC (short for "keyed-Hash Message Authentication Code") is a type of message authentication code (MAC) that
+uses a cryptographic hash function along with a secret key to provide message authentication.
+
+HMAC works by taking the message to be authenticated and combining it with a secret key using a specific hash
+function (such as SHA-256). This produces a unique message digest, which is then further processed using the
+same hash function to produce the final HMAC value.
+
+HMAC has several advantages over other message authentication techniques, including resistance to known attacks and
+a proven track record of security in a wide range of applications. It is commonly used in network protocols such as
+SSL/TLS, IPsec, and SSH, as well as in various other security-critical applications such as digital signatures and
+secure messaging.
+
+Why HMAC:
+    - Resistance to known attacks: HMAC is resistant to various known attacks, such as birthday attacks,
+ length-extension attacks, and collision attacks. This makes it a secure technique for protecting sensitive information.
+    - Keyed hash function: HMAC uses a secret key in addition to a hash function. This makes it more secure than simple
+ hash functions, which can be vulnerable to attacks such as collision attacks.
+    - Proven track record: HMAC has a proven track record of security in a wide range of applications. It is widely
+    used in network protocols such as SSL/TLS, IPsec, and SSH, as well as in various other security-critical
+    applications such as digital signatures and secure messaging.
+    - Efficiency: HMAC is efficient to compute, and can be implemented in hardware or software with relative ease.
